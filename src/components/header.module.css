@@ -1,0 +1,25 @@
+.header {
+  box-shadow: 0rem 0.1rem 0.1rem rgb(224, 224, 224);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  height: 6rem;
+  background-color: #fff;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.login::after {
+  content: '';
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.7rem;
+  margin-left: 0.4rem;
+  background-image: url('/imagens/usuario.svg');
+}

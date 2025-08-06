@@ -1,0 +1,62 @@
+.foto a{
+  display: grid;
+  cursor: pointer;
+  height: max-content;
+}
+
+.foto:nth-child(2) {
+  grid-column: 2/4;
+  grid-row: span 2;
+}
+
+.foto img {
+  grid-area: 1/1;
+}
+
+.foto span {
+  background: rgba(0, 0, 0, 0.3);
+  grid-area: 1/1;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  display: none;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.foto span::before {
+  content: '';
+  display: inline-block;
+  background-image: url('/public/imagens/visualizacao.svg');
+  width: 1.6rem;
+  height: 1rem;
+}
+
+.foto:hover span {
+  display: flex;
+}
+
+.feed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding-bottom: 2rem;
+  justify-items: center;
+}
+
+@media (max-width: 600px) {
+  .feed {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .foto:nth-child(2) {
+    grid-column: initial;
+    grid-row: initial;
+  }
+}
+
+@media (max-width: 450px) {
+  .feed {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,55 @@
+.loginContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.loginContainer::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background: url('/imagens/login.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.loginContainer form {
+  max-width: 40rem;
+}
+
+.perdeuLink {
+  display: inline-block;
+  color: #666;
+  font-size: 1.6rem;
+  margin-bottom: 8rem;
+}
+
+.perdeuLink::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #666;
+}
+
+.cadastrar {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 800px) {
+  .loginContainer {
+    grid-template-columns: 1fr;
+    align-items: start;
+    padding: 4rem 1rem 0 1rem;
+  }
+
+  .loginContainer::before {
+    display: none;
+  }
+
+  .loginContainer form {
+    max-width: 100%;
+  }
+}

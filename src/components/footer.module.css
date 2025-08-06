@@ -1,0 +1,22 @@
+.footer {
+  display: grid;
+  justify-items: center;
+  background-color: var(--cor-p-1);
+  color: #764701;
+  padding: 4rem 0rem;
+}
+
+.footer p {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footer a {
+  display: inline;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #fff;
+  transition: 0.3s;
+}

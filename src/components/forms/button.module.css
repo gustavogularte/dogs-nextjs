@@ -1,0 +1,23 @@
+.button {
+  display: block;
+  background-color: var(--cor-p-1);
+  border: 0.2rem solid var(--cor-p-1);
+  padding: 1.2rem 3.2rem;
+  border-radius: 0.4rem;
+  color: #764701;
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.button:hover,
+.button:focus {
+  border-color: var(--cor-p-2);
+  box-shadow: 0 0 0 0.1rem var(--cor-p-1);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
