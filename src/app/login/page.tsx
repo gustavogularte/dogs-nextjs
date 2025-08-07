@@ -4,7 +4,7 @@ import styles from './login.module.css';
 
 export default async function LoginPage() {
   return (
-    <section>
+    <section className='animeLeft'>
       <h1 className="titulo">Login</h1>
       <LoginForm />
       <Link href={'/login/perdeu'} className={styles.perdeuLink}>

@@ -97,16 +97,9 @@ export function POSTAR_COMENTARIO(id, body, token) {
   };
 }
 
-export function PERDEU_SENHA(body) {
+export function PERDEU_SENHA() {
   return {
     url: `${API_URL}/api/password/lost`,
-    options: {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(body),
-    },
   };
 }
 

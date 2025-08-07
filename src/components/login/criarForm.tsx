@@ -1,6 +1,6 @@
 'use client';
-import React from 'react';
-import { useFormState, useFormStatus } from 'react-dom';
+import React, { useActionState } from 'react';
+import { useFormStatus } from 'react-dom';
 import Button from '../forms/button';
 import Input from '../forms/input';
 import ErrorMessage from '../helper/errorMessage';
@@ -10,14 +10,14 @@ function ButtonForm() {
   const { pending } = useFormStatus();
 
   return pending ? (
-    <Button disabled={pending}>Carregando...</Button>
+    <Button disabled={pending}>Cadastrando...</Button>
   ) : (
-    <Button>Entrar</Button>
+    <Button>Cadastrar</Button>
   );
 }
 
 export default function CriarForm() {
-  const [state, action] = useFormState(criar, {
+  const [state, action] = useActionState(criar, {
     ok: false,
     error: '',
     data: null,

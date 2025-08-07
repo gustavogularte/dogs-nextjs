@@ -1,3 +1,10 @@
+import PerdeuForm from "@/components/login/perdeuForm";
+
 export default async function PerdeuPage() {
-  return <main><h1>Perdeu</h1></main>;
+  return (
+    <section className="animeLeft">
+      <h1 className="titulo">Perdeu a senha?</h1>
+      <PerdeuForm />
+    </section>
+  );
 }
