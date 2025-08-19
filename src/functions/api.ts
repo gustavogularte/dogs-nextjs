@@ -8,15 +8,9 @@ export function PEGAR_TOKEN() {
   };
 }
 
-export function LOGAR(token) {
+export function LOGAR() {
   return {
     url: API_URL + '/api/user',
-    options: {
-      method: 'GET',
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    },
   };
 }
 
